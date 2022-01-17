@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtest-static.a  CMakeFiles/test-static.dir/min.c.o CMakeFiles/test-static.dir/max.c.o
+/usr/bin/ranlib libtest-static.a

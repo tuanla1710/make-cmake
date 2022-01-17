@@ -1,0 +1,4 @@
+/home/educafe/lab_1/ch04.cmake/02.simple_target/cmake/build/CMakeFiles/rebuild_cache.dir
+/home/educafe/lab_1/ch04.cmake/02.simple_target/cmake/build/CMakeFiles/test-shared.dir
+/home/educafe/lab_1/ch04.cmake/02.simple_target/cmake/build/CMakeFiles/edit_cache.dir
+/home/educafe/lab_1/ch04.cmake/02.simple_target/cmake/build/CMakeFiles/a.out.dir

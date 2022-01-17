@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtest-static.a  CMakeFiles/test-static.dir/test2.c.o CMakeFiles/test-static.dir/test3.c.o
+/usr/bin/ranlib libtest-static.a

@@ -1,0 +1,13 @@
+SRCS = test1.c test2.c test3.c
+OBJS = ${SRCS:.c=.o}
+
+mytest: $(OBJS)
+	$(CC) -o $@ $^
+
+test1.o: test1.c a.h b.h
+test2.o: test2.c a.h c.h
+test3.o: test3.c a.h b.h c.h
+
+clean:
+	rm ${OBJS} mytest
+	

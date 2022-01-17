@@ -1,0 +1,2 @@
+MESSAGE("Hello world")
+execute_process(COMMAND touch myfile)

@@ -1,0 +1,9 @@
+/home/educafe/lab_1/ch04.cmake/12.install/cmake/build/CMakeFiles/install/strip.dir
+/home/educafe/lab_1/ch04.cmake/12.install/cmake/build/CMakeFiles/install/local.dir
+/home/educafe/lab_1/ch04.cmake/12.install/cmake/build/CMakeFiles/install.dir
+/home/educafe/lab_1/ch04.cmake/12.install/cmake/build/CMakeFiles/list_install_components.dir
+/home/educafe/lab_1/ch04.cmake/12.install/cmake/build/CMakeFiles/rebuild_cache.dir
+/home/educafe/lab_1/ch04.cmake/12.install/cmake/build/CMakeFiles/test-shared.dir
+/home/educafe/lab_1/ch04.cmake/12.install/cmake/build/CMakeFiles/test-static.dir
+/home/educafe/lab_1/ch04.cmake/12.install/cmake/build/CMakeFiles/edit_cache.dir
+/home/educafe/lab_1/ch04.cmake/12.install/cmake/build/CMakeFiles/a.out.dir

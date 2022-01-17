@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/educafe/lab_1/ch04.cmake/01.basics/cmake/a.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+
+/home/educafe/lab_1/ch04.cmake/01.basics/cmake/b.h
+
+/home/educafe/lab_1/ch04.cmake/01.basics/cmake/c.h
+
+/home/educafe/lab_1/ch04.cmake/01.basics/cmake/test1.c
+a.h
+/home/educafe/lab_1/ch04.cmake/01.basics/cmake/a.h
+b.h
+/home/educafe/lab_1/ch04.cmake/01.basics/cmake/b.h
+
+/home/educafe/lab_1/ch04.cmake/01.basics/cmake/test2.c
+a.h
+/home/educafe/lab_1/ch04.cmake/01.basics/cmake/a.h
+c.h
+/home/educafe/lab_1/ch04.cmake/01.basics/cmake/c.h
+
+/home/educafe/lab_1/ch04.cmake/01.basics/cmake/test3.c
+a.h
+/home/educafe/lab_1/ch04.cmake/01.basics/cmake/a.h
+b.h
+/home/educafe/lab_1/ch04.cmake/01.basics/cmake/b.h
+c.h
+/home/educafe/lab_1/ch04.cmake/01.basics/cmake/c.h
+

@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+29d96f6c2d0aabca02ac95000a164a98 test2.c

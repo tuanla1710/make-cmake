@@ -1,0 +1,4 @@
+/home/educafe/lab_1/ch04.cmake/05.scope/cmake/build/CMakeFiles/rebuild_cache.dir
+/home/educafe/lab_1/ch04.cmake/05.scope/cmake/build/CMakeFiles/edit_cache.dir
+/home/educafe/lab_1/ch04.cmake/05.scope/cmake/build/mysub/CMakeFiles/rebuild_cache.dir
+/home/educafe/lab_1/ch04.cmake/05.scope/cmake/build/mysub/CMakeFiles/edit_cache.dir

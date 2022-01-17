@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/a.out.dir/test1.c.o  -o a.out  -Wl,-rpath,/home/educafe/lab_1/ch04.cmake/02.simple_target/cmake/build libtest-shared.so 

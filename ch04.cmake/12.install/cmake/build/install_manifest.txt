@@ -1,0 +1,3 @@
+/home/educafe/bin/a.out
+/home/educafe/lib/libtest-static.a
+/home/educafe/lib/libtest-shared.so

@@ -1,0 +1,64 @@
+ #!/bin/bash
+ 
+ if [ $# -lt 1 ]; then
+	echo "Usage : $(basename $0) <file.o> [.o ...]"
+	exit 1
+fi
+ 
+ ld --build-id -dynamic-linker /lib64/ld-linux-x86-64.so.2 \
+ /usr/lib/x86_64-linux-gnu/Scrt1.o \
+ /usr/lib/x86_64-linux-gnu/crti.o \
+ /usr/lib/x86_64-linux-gnu/crtn.o \
+ /usr/lib/gcc/x86_64-linux-gnu/9/crtend.o \
+ /usr/lib/gcc/x86_64-linux-gnu/9/crtbegin.o \
+ -lc \
+$@ 
+
+
+: << COMMENT
+/*
+	PIC - position independent code (-fPIC)
+	PIE - position independent executable (-fPIE -pie)
+	crt - C runtime
+*/
+
+/*
+crt0.o
+	Older style of the initial runtime code ?  Usually not generated anymore
+	with Linux toolchains, but often found in bare metal toolchains.  Serves
+	same purpose as crt1.o (see below).
+crt1.o
+	Newer style of the initial runtime code.  Contains the _start symbol which
+	sets up the env with argc/argv/libc _init/libc _fini before jumping to the
+	libc main.  glibc calls this file 'start.S'. 
+crti.o
+	Defines the function prolog; _init in the .init section and _fini in the .fini section.
+	glibc calls this 'initfini.c'. (for push in the stack)
+crtn.o
+	Defines the function epilog.  
+	glibc calls this 'initfini.c'. (for pop in the stack)
+Scrt1.o
+	Used in place of crt1.o when generating PIEs.
+gcrt1.o
+	Used in place of crt1.o when generating code with profiling information.
+	Compile with -pg.  Produces output suitable for the gprof util.
+Mcrt1.o
+	Like gcrt1.o, but is used with the prof utility.  glibc installs this as
+	a dummy file as it's useless on linux systems.
+*/
+
+/*
+crtbegin.o
+	GCC uses this to find the start of the constructors.(init)
+crtbeginS.o
+	Used in place of crtbegin.o when generating shared objects/PIEs.
+crtbeginT.o
+	Used in place of crtbegin.o when generating static executables.
+crtend.o
+	GCC uses this to find the start of the destructors.(fini)
+crtendS.o
+	Used in place of crtend.o when generating shared objects/PIEs.
+*/
+
+/* http://www.vishalchovatiya.com/crt-run-time-before-starting-main/	*/
+COMMENT

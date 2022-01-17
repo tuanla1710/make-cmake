@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/a.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+
+../include/b.h
+
+../include/c.h
+
+/home/educafe/lab_1/ch04.cmake/03-1.add_subdirectory/cmake/libs/test2.c
+a.h
+/home/educafe/lab_1/ch04.cmake/03-1.add_subdirectory/cmake/libs/a.h
+c.h
+/home/educafe/lab_1/ch04.cmake/03-1.add_subdirectory/cmake/libs/c.h
+
+/home/educafe/lab_1/ch04.cmake/03-1.add_subdirectory/cmake/libs/test3.c
+a.h
+/home/educafe/lab_1/ch04.cmake/03-1.add_subdirectory/cmake/libs/a.h
+b.h
+/home/educafe/lab_1/ch04.cmake/03-1.add_subdirectory/cmake/libs/b.h
+c.h
+/home/educafe/lab_1/ch04.cmake/03-1.add_subdirectory/cmake/libs/c.h
+

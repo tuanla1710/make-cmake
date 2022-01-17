@@ -1,0 +1,4 @@
+/home/educafe/lab_1/ch04.cmake/10.add_dependencies/cmake/build/CMakeFiles/rebuild_cache.dir
+/home/educafe/lab_1/ch04.cmake/10.add_dependencies/cmake/build/CMakeFiles/edit_cache.dir
+/home/educafe/lab_1/ch04.cmake/10.add_dependencies/cmake/build/CMakeFiles/files.dir
+/home/educafe/lab_1/ch04.cmake/10.add_dependencies/cmake/build/CMakeFiles/libs.dir

@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/a.out.dir/test1.c.o CMakeFiles/a.out.dir/test2.c.o CMakeFiles/a.out.dir/test3.c.o  -o a.out 

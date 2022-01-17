@@ -1,0 +1,4 @@
+/home/educafe/lab_1/ch04.cmake/11.add_custom_command/cmake/build/CMakeFiles/rebuild_cache.dir
+/home/educafe/lab_1/ch04.cmake/11.add_custom_command/cmake/build/CMakeFiles/task1.dir
+/home/educafe/lab_1/ch04.cmake/11.add_custom_command/cmake/build/CMakeFiles/edit_cache.dir
+/home/educafe/lab_1/ch04.cmake/11.add_custom_command/cmake/build/CMakeFiles/a.out.dir

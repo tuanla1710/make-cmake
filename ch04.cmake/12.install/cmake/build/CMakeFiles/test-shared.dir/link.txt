@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC   -shared -Wl,-soname,libtest-shared.so -o libtest-shared.so CMakeFiles/test-shared.dir/min.c.o CMakeFiles/test-shared.dir/max.c.o 
