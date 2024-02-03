@@ -1,0 +1,66 @@
+### Make file
+# Description: A simple Makefile to compile the shared library and the main program
+
+# compiler
+CC=gcc
+
+# flags
+CFLAGS=-I.
+
+# dependencies
+DEPS = lib/hello.h
+
+# object files	
+OBJ = main.o
+
+# libraries
+LIBS=-L. -lhello
+
+# compile the shared library
+libhello.so: lib/hello.o
+	$(CC) -shared -o $@ $^
+	
+# compile the object files
+%.o: %.c $(DEPS)
+	$(CC) -c -o $@ $< $(CFLAGS) 
+
+# compile the main program
+hello: $(OBJ) libhello.so
+	$(CC) -o $@ $(OBJ) $(LIBS)
+
+# clean the object files
+.PHONY: clean
+
+# clean the object files
+clean:
+	rm -f *.o hello libhello.so
+
+# main.c
+
+#include "lib/hello.h"
+
+int main() {
+    hello("TUAN ANH");
+    return 0;
+}
+
+# hello lib/hello.c, lib.hello.h
+
+#include <stdio.h>
+#include "hello.h"
+void hello( const char * name) {
+    printf("Hello, %s!\n", name);
+}
+
+# hello.h
+#ifndef HELLO_H
+#define HELLO_H
+
+void hello(const char *name);
+
+#endif
+
+
+
+
+
