@@ -4,7 +4,7 @@
 # compiler
 CC=gcc
 
-# flags
+# flags, I will install header files. 
 CFLAGS=-I.
 
 # dependencies
