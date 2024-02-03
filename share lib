@@ -1,10 +1,9 @@
-### Make file
 # Description: A simple Makefile to compile the shared library and the main program
 
 # compiler
 CC=gcc
 
-# flags, I will install header files. 
+# flags
 CFLAGS=-I.
 
 # dependencies
@@ -26,41 +25,28 @@ libhello.so: lib/hello.o
 
 # compile the main program
 hello: $(OBJ) libhello.so
-	$(CC) -o $@ $(OBJ) $(LIBS)
+	$(CC) -o $@ $(OBJ) $(LIBS) -Wl,-rpath=.
 
 # clean the object files
 .PHONY: clean
 
 # clean the object files
 clean:
-	rm -f *.o hello libhello.so
+	rm -f *.o hello libhello.so lib/hello.o
 
-# main.c
+# distclean 
+.PHONY: distclean
 
-#include "lib/hello.h"
-
-int main() {
-    hello("TUAN ANH");
-    return 0;
-}
-
-# hello lib/hello.c, lib.hello.h
-
-#include <stdio.h>
-#include "hello.h"
-void hello( const char * name) {
-    printf("Hello, %s!\n", name);
-}
-
-# hello.h
-#ifndef HELLO_H
-#define HELLO_H
-
-void hello(const char *name);
-
-#endif
-
-
-
-
+# clean the object files
+distclean: clean
+	rm -f *~ 
+	rm -f lib/*~ 
+	rm -f lib/*/*~ 
+	rm -f lib/*/*/*~ 
+	rm -f lib/*/*/*/*~ 
+	rm -f lib/*/*/*/*/*~ 
+	rm -f lib/*/*/*/*/*/*~ 
+	rm -f lib/*/*/*/*/*/*/*~ 
+	rm -f lib/*/*/*/*/*/*/*/*~ 
+	rm -f lib/*/*/*/*/*/*/*/*/*~ 
 
